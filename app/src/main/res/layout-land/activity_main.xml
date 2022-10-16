@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/vv"
+        android:layout_width="507dp"
+        android:layout_height="238dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back1"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="192dp"
+        android:layout_height="56dp"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="@+id/tv_command_result"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_command_result" />
+
+    <ImageButton
+        android:id="@+id/bt_play"
+        android:layout_width="70dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_shutdown_server"
+        app:srcCompat="@drawable/connect_32"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/bt_shutdown"
+        android:layout_width="64dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bt_add"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/bt_shutdown_server"
+        android:layout_width="72dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_reboot"
+        app:srcCompat="@drawable/stop_32"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/bt_reboot"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_shutdown"
+        app:srcCompat="@drawable/restart_32"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/bt_find"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_ip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688"
+        app:srcCompat="@drawable/search_320"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="213dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/bt_LedOn"
+        app:layout_constraintStart_toStartOf="@+id/tv"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/tv_command_result"
+        android:layout_width="190dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/vv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_FansOff"
+        android:layout_width="46dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/closeFans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_LedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/openLed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_LedOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/closeLed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_FansOn"
+        android:layout_width="46dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/openFans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_BeepOn"
+        android:layout_width="122dp"
+        android:layout_height="51dp"
+        android:text="@string/openBeep"
+        app:layout_constraintBottom_toTopOf="@+id/bt_BeepOff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vv"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/bt_BeepOff"
+        android:layout_width="126dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/closeBeep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_BeepOn" />
+
+    <TextView
+        android:id="@+id/tv_speech"
+        android:layout_width="137dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="28dp"
+        android:hint="@string/STT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_ip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_Result"
+        android:layout_width="124dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_find"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bt_find"
+        app:layout_constraintTop_toBottomOf="@+id/vv"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="61dp"
+        android:layout_height="59dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_speech"
+        app:layout_constraintEnd_toStartOf="@+id/vv"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/tv_speech"
+        app:layout_constraintTop_toTopOf="@+id/tv_speech"
+        app:srcCompat="@android:drawable/ic_btn_speak_now"
+        android:focusable="true"
+        android:contentDescription="@string/TODO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

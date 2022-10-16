@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SocketDemo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SmartHome</string>
+    <string name="nav_header_subtitle">作者：赵文韬</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">退出程序</string>
+    <string name="forward">FORWARD</string>
+    <string name="back">BACK</string>
+    <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+    <string name="title">SMART CAR CONTROL CENTER</string>
+    <string name="address">请输入树莓派地址</string>
+    <string name="closeFans">风扇关</string>
+    <string name="openFans">风扇开</string>
+    <string name="closeLed">关灯</string>
+    <string name="openLed">开灯</string>
+    <string name="closeBeep">警报关</string>
+    <string name="openBeep">警报开</string>
+    <string name="STT">语音识别</string>
+    <string name="TODO">TODO</string>
+</resources>
